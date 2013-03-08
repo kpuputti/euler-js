@@ -124,3 +124,13 @@ exports.arrayEquals = function (arr1, arr2) {
         });
     }
 };
+
+exports.divisibleByAll = function (n, arr) {
+    return arr.every(function (val) {
+        return n % val === 0;
+    });
+};
+
+exports.min = function (arr) {
+    return Math.min.apply(null, arr);
+};
