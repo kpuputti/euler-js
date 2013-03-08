@@ -1,0 +1,19 @@
+{
+    "name": "Euler",
+    "homepage": "https://github.com/kpuputti/euler-js",
+    "version": "0.0.1",
+    "author": "Kimmo Puputti <kpuputti@gmail.com>",
+    "description": "Project Euler ( http://projecteuler.net ) exercises in JavaScript.",
+    "repository": {
+        "type": "git",
+        "url": "git@github.com:kpuputti/euler-js.git"
+    },
+    "dependencies": {
+    },
+    "licence": "MIT",
+    "private": true,
+    "engines": {
+        "node": "0.8.x",
+        "npm": "1.1.x"
+    }
+}
