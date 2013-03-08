@@ -33,3 +33,29 @@ exports.range = function () {
     return arr;
 };
 
+exports.last = function (arr) {
+    exports.assert(arr.length > 0);
+    return arr[arr.length - 1];
+};
+
+exports.fibonacciUpTo = function (n) {
+    var arr, len, val;
+
+    arr = [1, 2];
+
+    while (true) {
+        len = arr.length;
+        val = arr[len - 2] + arr[len - 1];
+        if (val < n) {
+            arr.push(val);
+        } else {
+            break;
+        }
+    }
+
+    return arr;
+};
+
+exports.isEven = function (n) {
+    return n % 2 === 0;
+};
