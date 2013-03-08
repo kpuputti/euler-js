@@ -108,3 +108,19 @@ exports.getFactors = function (n) {
 
     return arr;
 };
+
+exports.reversed = function (arr) {
+    var newArr = arr.slice();
+    newArr.reverse();
+    return newArr;
+};
+
+exports.arrayEquals = function (arr1, arr2) {
+    if (arr1.length !== arr2.length) {
+        return false;
+    } else {
+        return arr1.every(function (val, i) {
+            return val === arr2[i];
+        });
+    }
+};
