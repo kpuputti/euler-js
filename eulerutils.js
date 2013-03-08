@@ -59,3 +59,52 @@ exports.fibonacciUpTo = function (n) {
 exports.isEven = function (n) {
     return n % 2 === 0;
 };
+
+exports.isPrime = function (n) {
+    var i, ceil;
+
+    if (n < 2) {
+        return false;
+    } else if (n < 4) {
+        return true;
+    }
+
+    ceil = Math.ceil(Math.sqrt(n));
+
+    for (i = 2; i <= ceil; i++) {
+        if (n % i === 0) {
+            return false;
+        }
+    }
+
+    return true;
+};
+
+exports.primesUpTo = function (n) {
+    var i, arr;
+
+    arr = [];
+
+    for (i = 0; i < n; i++) {
+        if (exports.isPrime(i)) {
+            arr.push(i);
+        }
+    }
+
+    return arr;
+};
+
+exports.getFactors = function (n) {
+    var arr, ceil, i;
+
+    arr = [];
+    ceil = Math.ceil(Math.sqrt(n));
+
+    for (i = 0; i <= ceil; i++) {
+        if (n % i === 0) {
+            arr.push(i);
+        }
+    }
+
+    return arr;
+};
