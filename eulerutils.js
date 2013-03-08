@@ -94,6 +94,23 @@ exports.primesUpTo = function (n) {
     return arr;
 };
 
+exports.nPrimes = function (n) {
+    var arr, i;
+
+    i = 2;
+    arr = [];
+
+    while(arr.length < n) {
+
+        if (exports.isPrime(i)) {
+            arr.push(i);
+        }
+        i++;
+    }
+
+    return arr;
+};
+
 exports.getFactors = function (n) {
     var arr, ceil, i;
 
