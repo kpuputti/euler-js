@@ -21,8 +21,8 @@ function getLargestPalindromic() {
 
     largest = 0;
 
-    for (i = 999; i > 0; i--) {
-        for (j = 999; j > 0; j--) {
+    for (i = 100; i < 1000; i++) {
+        for (j = 100; j < 1000; j++) {
 
             val = i * j;
 
