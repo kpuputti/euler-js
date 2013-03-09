@@ -151,3 +151,19 @@ exports.divisibleByAll = function (n, arr) {
 exports.min = function (arr) {
     return Math.min.apply(null, arr);
 };
+
+exports.max = function (arr) {
+    return Math.max.apply(null, arr);
+};
+
+function multiply(x, y) {
+    return x * y;
+}
+
+exports.product = function (arr) {
+    return arr.reduce(multiply);
+};
+
+exports.toInt = function (s) {
+    return parseInt(s, 10);
+};
